@@ -1,0 +1,47 @@
+import.content:
+  path: '/import'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::content'
+    _title: 'Import'
+  requirements:
+    _permission: 'access content'
+import.upgrade:    
+  path: '/importupgr'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::upgrade'
+    _title: 'Import Upgr'
+  requirements:
+    _permission: 'access content'  
+import.korrection:    
+  path: '/importkorrection/{nid}'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::n_a_korrection'
+    _format: json
+    _title: 'Import Korrection'
+  requirements:
+    _permission: 'access content'  
+import.dupla:    
+  path: '/importduplalovak'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::dupla_lovak'
+    _format: json
+    _title: 'Dupla lovak'
+  requirements:
+    _permission: 'access content'  
+import.torolt:   
+  path: '/importtorolt'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::torolt_miatti'
+    _format: json
+    _title: 'Torolt miatti'
+  requirements:
+    _permission: 'access content'
+import.nincs_tenyeszto:   
+  path: '/import_nincs_tenyeszto'
+  defaults:
+    _controller: '\Drupal\import\Controller\ImportController::nincs_tenyeszto'
+    _format: json
+    _title: 'Nincs tenyeszto'
+  requirements:
+    _permission: 'access content'      
+                        

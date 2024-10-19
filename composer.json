@@ -1,0 +1,16 @@
+{
+    "name": "zojuhasz/ugeto_import",
+    "type": "drupal-module",
+    "description": "A short description of your module",
+    "keywords": [
+          "Drupal"
+    ],
+    "homepage": "https://github.com/zojuhasz/ugeto_import",
+    "license": "GPL-2.0-or-later",
+    "require": {
+           "composer/installers": "^2.0"
+    },
+    "extra": {
+    "installer-name": "import"
+    }
+}
